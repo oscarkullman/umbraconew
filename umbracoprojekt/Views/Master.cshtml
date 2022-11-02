@@ -14,10 +14,10 @@
 		<div class="navigation">
 			<ul>
 				<li>
-					<a href="/">Home Page</a>
+					<a class="margin-right-20" href="/">Home Page</a>
 				</li>
 				<li>
-					<a href="/">Test</a>
+					<a class="margin-right-20" href="/">Test</a>
 				</li>
 				<li>
 					<a href="/contact">Contact</a>
@@ -41,12 +41,11 @@
 		width: fit-content;
 
 		left: 50%;
-		transform: translate(-50%, 0%);
+		transform: translate(-50%);
 	}
 
 	li {
 		width: fit-content;
-		margin-right: 20px;
 		list-style-type: none;
 
 		text-decoration: none;
@@ -62,6 +61,10 @@
 		li a:hover {
 			text-decoration: underline;
 		}
+
+	.margin-right-20 {
+		margin-right: 20px;
+	}
 	
 	.navigation {
 		position: static;

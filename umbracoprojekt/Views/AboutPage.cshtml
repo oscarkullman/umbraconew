@@ -1,0 +1,60 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.AboutPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<html>
+    <head>
+	    <title>About</title>
+        <link rel="stylesheet" href="css/BaseStyles.css" />
+    </head>
+	<body>
+        <div class="content-wrapper">
+            <img class="about-image" src="@Model.Value("pageImage")" />
+            <div class="about centered break-margin">
+                <h1>@Model.Value("title")</h1>
+                <p class="top-10">@Model.Value("description")</p>
+            </div>
+                
+            <div class="card-holder">
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h2>@Model.Value("nameCard1")</h2>
+                            <p class="title">@Model.Value("roleCard1")</p>
+                            <p class="break-margin">@Model.Value("descriptionCard1")</p>
+                            <br />
+                            <p>@Model.Value("emailCard1")</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h2>@Model.Value("nameCard2")</h2>
+                            <p class="title">@Model.Value("roleCard2")</p>
+                            <p class="break-margin">@Model.Value("descriptionCard2")</p>
+                            <br />
+                            <p>@Model.Value("emailCard2")</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h2>@Model.Value("nameCard3")</h2>
+                            <p class="title">@Model.Value("roleCard3")</p>
+                            <p class="break-margin">@Model.Value("descriptionCard3")</p>
+                            <br />
+                            <p>@Model.Value("emailCard3")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

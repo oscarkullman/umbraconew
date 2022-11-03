@@ -1,6 +1,5 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<umbracoprojekt.ContactDTO>
 
-
 @using (Html.BeginUmbracoForm("contactSubmit", "ContactSurface"))
  {
     <div class="contactForm">
@@ -21,51 +20,4 @@
         <input type="submit" value="Send"/>
     </div>
  }
-<style>
-    .contactForm{
-    position: relative;
-    width: 50%;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    padding: 10px;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
-    z-index: 1;
-}
-.contactForm input{
-    padding:10px;
-    margin:10px;
-    border:0;
-    border-bottom: 1px solid #eee;
-    width:90%;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
-    border-radius: 10px;
-  
-}
-.contactForm label{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding:10px;
-}
-.contactForm textarea{
-    padding:10px;
-    margin:10px;
-    border:0;
-    border-bottom: 1px solid #eee;
-    width:90%;
-    height: 100px;
-    border-radius: 10px;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
-    resize: none;
-}
-.contactForm input[type=submit]{
-    background-color: #222831;
-    color:rgb(238, 226, 226);
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
-} 
-.contactForm input[type="submit"]:hover{
-    color:#a3f7bf;
-    
-}
 
-</style>

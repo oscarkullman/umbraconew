@@ -10,48 +10,13 @@
 	<head>
 		<title>Home Page</title>
 		<link rel="stylesheet" href="css/BaseStyles.css" />
+		<script src="scripts/script.js"></script>
 	</head>
-    <img style="z-index:"src="@Model.Value("mainImage")">
+    <img class="home-img" src="@Model.Value("mainImage")">
 	<body>
-		<div class="centered">
+		<div class="centered home-div">
 			<h1 class="top-10">Trivia</h1>
-			<button class="btn">Start quiz</button>
+			<button class="btn"onclick="goToTrivia()">Start Quiz</button>
 		</div>
 	</body>
 </html>
-
-<style>
-
-	div {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  top: 11px;
-  border: 0px;
-}
-
-img {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-h1{
-	color:white;
-}
-.btn{
-	cursor: pointer;
-        border: 1px solid #3498db;
-        background-color: transparent;
-        height: 50px;
-        width: 200px;
-        color: #3498db;
-        font-size: 1.5em;
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-		margin-top: 250px;
-}
-
-
-</style>

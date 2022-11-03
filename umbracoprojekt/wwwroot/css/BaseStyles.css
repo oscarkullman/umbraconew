@@ -20,17 +20,20 @@ html {
 }
 
 .centered {
-		position: relative;
-		top: 11px;
-		left: 50%;
-		transform: translate(-50%);
+	position: relative;
+	padding: 25px 25px;
+	top: 11px;
+	left: 50%;
+	transform: translate(-50%);
 
-		width: fit-content;
-		height: fit-content;
-		min-width: 700px;
-		min-height: 300px;
-		text-align: center;
-	}
+	width: fit-content;
+	height: fit-content;
+	min-width: 700px;
+	min-height: 150px;
+	text-align: center;
+
+	border-radius: 5px;
+}
 
 .top-10 {
 	position: relative;
@@ -40,8 +43,9 @@ html {
 .column {
 	float: left;
 	width: 33.3%;
+	
 	margin-bottom: 16px;
-	padding: 0 8px;
+	padding: 0px 8px;
 }
 
 .row {
@@ -51,10 +55,19 @@ html {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 8px;
+	height: fit-content;
+	width: fit-content;
 	color: white;
-	background: rgb(128, 128, 128, 0.6);
+	background: rgb(128, 128, 128, 0.85);
 	border-radius: 8px;
-	
+	padding: 10px 10px;
+}
+
+.card-holder {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .about-section {
@@ -89,9 +102,8 @@ html {
 }
 
 .about {
-	margin: 50px;
 	color: white;
-	background: rgb(128, 128, 128, 0.6);
+	background: rgb(128, 128, 128, 0.85);
 	border-radius: 8px;
 }
 
@@ -102,4 +114,36 @@ h2 {
 .member title {
 	width: 1px;
 }
-        
+
+.home-div {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	top: 11px;
+	border: 0px;
+}
+
+.home-img {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+h1 {
+	color: white;
+}
+
+.btn {
+	cursor: pointer;
+	border: 1px solid #3498db;
+	background-color: transparent;
+	height: 50px;
+	width: 200px;
+	color: #3498db;
+	font-size: 1.5em;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+	margin-top: 50px;
+}

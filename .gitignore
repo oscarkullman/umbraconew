@@ -478,3 +478,4 @@ appsettings-schema.json
 
 # Media files
 /wwwroot/media/
+**/vscode

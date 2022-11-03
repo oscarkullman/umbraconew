@@ -1,0 +1,42 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+li {
+    width: fit-content;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+    li a {
+        color: white;
+        font-family: Arial;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.navigation {
+    position: static;
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+}

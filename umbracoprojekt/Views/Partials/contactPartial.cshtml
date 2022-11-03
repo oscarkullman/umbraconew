@@ -1,7 +1,6 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<umbracoprojekt.ContactDTO>
 
-@using (Html.BeginUmbracoForm("contactSubmit", "ContactSurface"))
- {
+<form>
     <div class="contactForm">
         <br/>
 
@@ -19,5 +18,5 @@
         <br />
         <input type="submit" value="Send"/>
     </div>
- }
+</form>
 

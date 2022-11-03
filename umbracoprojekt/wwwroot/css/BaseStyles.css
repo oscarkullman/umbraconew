@@ -1,20 +1,52 @@
 .centered {
-		position: relative;
-		top: 11px;
-		left: 50%;
-		transform: translate(-50%);
+	position: relative;
+	top: 11px;
+	left: 50%;
+	transform: translate(-50%);
 
-		width: fit-content;
-		height: fit-content;
-		min-width: 700px;
-		min-height: 300px;
-		text-align: center;
+	width: fit-content;
+	height: fit-content;
+	min-width: 700px;
+	min-height: 300px;
+	text-align: center;
 
-		border-radius: 5px;
-	}
+	border-radius: 5px;
+}
 
-	.top-10 {
-		position: relative;
-		top: 10px;
-	}
-        
+.top-10 {
+	position: relative;
+	top: 10px;
+}
+
+div {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	top: 11px;
+	border: 0px;
+}
+
+img {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+h1 {
+	color: white;
+}
+
+.btn {
+	cursor: pointer;
+	border: 1px solid #3498db;
+	background-color: transparent;
+	height: 50px;
+	width: 200px;
+	color: #3498db;
+	font-size: 1.5em;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+	margin-top: 50px;
+}

@@ -1,0 +1,40 @@
+﻿@using Newtonsoft.Json
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.TriviaApi>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+
+	var questions = await TriviaAPI.GetTriviaQuestion();
+}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Trivia API</title>
+		<link rel="stylesheet" href="css/BaseStyles.css" />
+		<link rel="stylesheet" href="css/TriviaAPI.css" />
+	</head>
+
+	<body>
+		<div class="centered">
+			<h1 class="top-10" id="title">Trivia API</h1>
+			<br /><br />
+			@if (questions != null)
+			{
+				<h3>@questions[3].Question</h3>
+				<br />
+				<h4>Category: @questions[3].Category.Title</h4>
+				<br />
+				<label for="answer-box">Answer:</label>
+				<input type="text" placeholder="Your answer here..." name="answer-box" id="answer-box" />
+				<br /><br />
+				<p>Answer: @questions[3].Answer</p>
+			}
+			<br /><br />
+			<button>Generate New Question</button>
+		</div>
+	</body>
+
+	<script src="scripts/TriviaAPI.js"></script>
+</html>

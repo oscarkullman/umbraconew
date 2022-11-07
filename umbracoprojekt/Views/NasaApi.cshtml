@@ -1,0 +1,44 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.NasaApi>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+
+	var nasaApiCall = await NasaAPI.GetNasaImages(4);
+}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NASA API</title>
+		<link rel="stylesheet" href="css/BaseStyles.css" />
+		<link rel="stylesheet" href="css/NasaAPI.css" />
+	</head>
+
+	<body>
+		<div class="centered">
+			<h1 class="nasa-title">@Model.Value("title")</h1>
+			<p>Here are 4 random images from NASA.</p>
+			<br /><br />
+			<hr />
+			<br />
+			@if (nasaApiCall != null)
+			{
+				@foreach (var image in nasaApiCall)
+				{
+					<div class="nasa-image-div">
+						<h1 class="nasa-image-title">@image.Title</h1>
+						<h2 class="nasa-image-date">@image.Date</h2>
+						<br />
+						<img class="nasa-image-img" src="@image.ImageUrl" alt="@image.Title" />
+						<br /><br />
+						<p>@image.Description</p>
+						<br /><br />
+						<hr />
+						<br />
+					</div>
+				}
+			}
+		</div>
+	</body>
+</html>

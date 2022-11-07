@@ -1,0 +1,30 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Findings>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Findings</title>
+		<link rel="stylesheet" href="css/BaseStyles.css" />
+	</head>
+
+	<body>
+	    <h1>@Model.Value("findingsTitle")</h1>
+		<div class="centered">
+			<h2 class="top-10">@Model.Value("firstFindingTitle")</h2>
+			<p>@Model.Value("firstFindingText")</p>
+		</div>
+			<div class="centered">
+			<h2 class="top-10">@Model.Value("secondFindingTitle")</h2>
+			<p>@Model.Value("secondFingingText")</p>
+		</div>
+			<div class="centered">
+			<h2 class="top-10">@Model.Value("thirdFindingTitle")</h2>
+			<p>@Model.Value("thirdFindingText")</p>
+		</div>
+	</body>
+</html>

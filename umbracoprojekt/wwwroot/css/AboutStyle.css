@@ -1,0 +1,23 @@
+﻿.about-member-div {
+    position:relative;
+    padding: 11px 20px;
+    max-width: 500px;
+    text-align: left;
+
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.about-title {
+    font-size: 29px;
+}
+
+.about-role {
+    font-size: 21px;
+    margin-bottom: 4px;
+    color: rgb(55, 55, 55);
+}
+
+.about-mail {
+    color: rgb(64, 64, 64);
+}

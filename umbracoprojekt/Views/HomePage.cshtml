@@ -15,10 +15,9 @@
     <img class="home-img" src="@Model.Value("mainImage")">
 	<body>
 		<div class="centered home-div">
-			<h1 class="top-10 white-text">Our Umbraco Website</h1>
+			<h1 class="top-10 white-text">@Model.Value("title")</h1>
 			<br /><br />
-			<p class="white-text">This is a Umbraco website made for a school project. Click the button below to see the NASA API page.</p>
-			<p class="white-text">The page will fetch 4 random images from NASA with some information provided for each image.</p>
+			<h3 class="white-text">@Model.Value("description")</h3>
 			<button class="btn" onclick="goToNasaPage()">Go To NASA API Page</button>
 		</div>
 	</body>

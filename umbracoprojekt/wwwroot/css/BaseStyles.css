@@ -15,10 +15,6 @@ html {
 	text-align:center;
 }
 
-.break-margin{
-	margin-bottom: 25px;
-}
-
 .centered {
 	position: relative;
 	padding: 25px 25px;
@@ -40,6 +36,11 @@ html {
 	top: 10px;
 }
 
+.bottom-10 {
+	position: relative;
+	bottom: 10px;
+}
+
 .column {
 	float: left;
 	width: 33.3%;
@@ -48,67 +49,14 @@ html {
 	padding: 0px 8px;
 }
 
-.row {
-	background-image: ;
-}
-
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	margin: 8px;
-	height: fit-content;
-	width: fit-content;
-	color: white;
-	background: rgb(128, 128, 128, 0.85);
-	border-radius: 8px;
-	padding: 10px 10px;
-}
-
-.card-holder {
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.about-section {
-	padding: 50px;
-	text-align: center;
-	background-color: #474e5d;
-	color: white;
-}
-
-.container {
-	padding: 0 16px;
-}
-
 .title {
 	margin: 2px;
 	color: white;
+	text-decoration: underline;
 }
 
-.content-wrapper {
-	display: inline-block;
-	overflow: hidden;
-	position: static;
-	width: 100%;
-}
-
-.about-image {
-	pointer-events: none;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-}
-
-.about {
-	color: white;
-	background: rgb(128, 128, 128, 0.85);
-	border-radius: 8px;
-}
-
-.member title {
-	width: 1px;
+.title-non-white {
+	text-decoration: underline;
 }
 
 .home-div {
